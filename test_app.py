@@ -1,6 +1,8 @@
 import pytest
 from app import app, db
 
+# comment to push working pytest, ignore if seen 
+
 @pytest.fixture
 def client():
     app.config["TESTING"] = True
