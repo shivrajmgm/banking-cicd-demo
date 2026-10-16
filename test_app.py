@@ -67,3 +67,5 @@ def test_block_card(client):
     })
     assert res.status_code == 200
     assert db["user123"]["card_status"] == "Blocked"
+
+    
