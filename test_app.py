@@ -32,7 +32,7 @@ def test_login_lockout(client):
 # BANK-7: Check Balance is formatted correctly
 def test_dashboard_balance(client):
     res = client.get("/dashboard/user123")
-    assert res.status_code == 200
+    assert res.status_code == 999
     assert res.get_json()["balance"] == 150000.00
 
 
